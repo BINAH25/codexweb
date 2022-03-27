@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
-}
+/* HOME */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../public/asset/Small-Business.jpg");
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  transition: all 0.5s ease;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255);
+}
+nav {
+  position: fixed;
+  background: #000000;
+  width: 100%;
+}
+#service {
+  padding: 10px;
+}
+#contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/asset/web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.codex {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.code {
+  color: orangered;
+  text-transform: uppercase;
+}
+.social {
+  background: none;
+  outline: none;
+  border: none;
+}
+.social i {
+  color: white;
+  font-weight: bold;
+}
+.social i:hover {
+  color: orangered;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  transform: scale(1.5);
+}
+.links {
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.links:hover {
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.link:hover {
+  color: white;
+}
+#footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0),
+    50% rgba(0, 0, 0, 0.15) 100%
+  );
 }
